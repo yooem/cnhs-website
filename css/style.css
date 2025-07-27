@@ -912,3 +912,21 @@ ul {
         font-size: 0.9em;
     }
 }
+
+/* facebook-embed-container: Ensures responsiveness for the FB plugin */
+.facebook-embed-container {
+    display: flex;
+    /* Helps center the plugin if it's narrower than its container */
+    justify-content: center;
+    max-width: 600px;
+    /* Adjust max-width as desired for the feed column */
+    margin: 0 auto;
+    /* Center the container */
+    /* You might want to add padding or background specific to this section */
+}
+
+/* Important for the plugin to adapt to the container width */
+.fb-page {
+    width: 100% !important;
+    /* Override Facebook's default width */
+}
