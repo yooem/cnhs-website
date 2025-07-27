@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candon National High School</title>
+    <title>[School Name] - Empowering Futures</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v23.0">
-    </script>
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+        nonce="YOUR_NONCE_HERE"></script>
     <header class="main-header">
         <div class="header-top-bar">
             <div class="container">
@@ -38,7 +35,7 @@
         <nav class="main-nav">
             <div class="container">
                 <a href="index.html" class="school-logo">
-                    <img src="images/cnhs-logo.png" alt="Candon National High School Logo">
+                    <img src="images/school-logo.png" alt="[School Name] Logo">
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -75,15 +72,17 @@
                     <li class="dropdown">
                         <a href="#">Student Life <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">Clubs</a>
+                            <a href="#">Clubs & Societies</a>
                             <a href="#">Sports</a>
                             <a href="#">Arts & Culture</a>
+                            <a href="#">Pastoral Care</a>
                             <a href="#">Wellbeing</a>
                         </div>
                     </li>
                     <li class="dropdown">
                         <a href="#">Parents <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
+                            <a href="#">Parent Handbook</a>
                             <a href="#">Communication</a>
                             <a href="#">Calendar</a>
                             <a href="#">PTA</a>
@@ -107,7 +106,7 @@
         <div class="hero-image" style="background-image: url('images/hero-banner.jpg');"></div>
         <div class="hero-overlay">
             <div class="container">
-                <h1>Candon National High School</h1>
+                <h1>Welcome to [School Name] - Empowering Futures</h1>
                 <p>Nurturing academic excellence, personal growth, and a vibrant community.</p>
                 <div class="hero-buttons">
                     <a href="pages/about-us.html" class="btn btn-secondary">Learn More About Us</a>
@@ -122,28 +121,24 @@
             <div class="welcome-text">
                 <h2>A Message from Our Principal</h2>
                 <p>Dear Prospective Families and Students,</p>
-                <p>It is with immense pleasure that I welcome you to Candon National High School. We are a vibrant
-                    learning community
+                <p>It is with immense pleasure that I welcome you to [School Name]. We are a vibrant learning community
                     dedicated to fostering a holistic educational experience. Our commitment extends beyond academic
-                    rigor, focusing on developing well-rounded individuals equipped with critical thinking,
-                    creativity,
+                    rigor, focusing on developing well-rounded individuals equipped with critical thinking, creativity,
                     and compassion.</p>
-                <p>We invite you to explore our website and discover the exceptional opportunities that await your
-                    child
-                    at Candon National High School.</p>
-                <p class="principal-sign-off"><strong>MARINO G. GALIMBA</strong><br>School Principal IV</p>
+                <p>We invite you to explore our website and discover the exceptional opportunities that await your child
+                    at [School Name].</p>
+                <p class="principal-sign-off"><strong>[Principal's Name]</strong><br>Principal, [School Name]</p>
                 <a href="pages/about-us.html" class="btn btn-primary">Read More About Us</a>
             </div>
             <div class="welcome-image">
-                <img src="images/principal-avatar.png" alt="Principal's Photo" class="img-fluid" width="500"
-                    height="500">
+                <img src="images/principal-avatar.jpg" alt="Principal's Photo" class="img-fluid">
             </div>
         </div>
     </section>
 
     <section class="highlights-section section-padding bg-light-grey">
         <div class="container">
-            <h2 class="text-center">Why Choose Candon National High School?</h2>
+            <h2 class="text-center">Why Choose [School Name]?</h2>
             <div class="highlights-grid">
                 <div class="highlight-card">
                     <div class="icon-circle"><i class="fas fa-flask"></i></div>
@@ -163,57 +158,80 @@
                     <p>Unleash your potential beyond the classroom with our wide range of clubs and sports.</p>
                     <a href="#" class="read-more">Explore Activities <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <div class="highlight-card">
+                    <div class="icon-circle"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Pastoral Care</h3>
+                    <p>Dedicated support system focusing on every student's wellbeing and personal growth.</p>
+                    <a href="#" class="read-more">Our Approach <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="news-events-section section-padding">
         <div class="container">
-            <h2 class="text-center">Latest News & Upcoming Events</h2>
-            <div class="news-events-grid">
-                <article class="news-event-card">
-                    <img src="images/news-img1.jpg" alt="News Image 1">
-                    <div class="card-content">
-                        <span class="date"><i class="far fa-calendar-alt"></i> July 20, 2025</span>
-                        <h3>Annual Sports Day Success!</h3>
-                        <p>Our students showcased incredible talent and sportsmanship at this year's Sports Day...
-                        </p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <h2 class="text-center">Latest from Our School</h2>
+            <div class="news-facebook-grid">
+                <div class="news-events-content">
+                    <h3>News & Announcements</h3>
+                    <div class="news-events-grid">
+                        <article class="news-event-card">
+                            <img src="images/news-img1.jpg" alt="Annual Sports Day">
+                            <div class="card-content">
+                                <span class="date"><i class="far fa-calendar-alt"></i> July 20, 2025</span>
+                                <h3>Annual Sports Day Success!</h3>
+                                <p>Our students showcased incredible talent and sportsmanship at this year's Sports
+                                    Day...</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="news-event-card">
+                            <img src="images/news-img2.jpg" alt="Open Day for Prospective Students">
+                            <div class="card-content">
+                                <span class="date"><i class="far fa-calendar-alt"></i> August 15, 2025</span>
+                                <h3>Open Day for Prospective Students</h3>
+                                <p>Join us to learn more about our academic programs and school life...</p>
+                                <a href="#" class="read-more">Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="news-event-card">
+                            <img src="images/news-img3.jpg" alt="Science Fair Innovation Showcase">
+                            <div class="card-content">
+                                <span class="date"><i class="far fa-calendar-alt"></i> July 10, 2025</span>
+                                <h3>Science Fair Innovation Showcase</h3>
+                                <p>Students presented groundbreaking projects at our annual Science Fair...</p>
+                                <a href="#" class="read-more">View Projects <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="news-event-card">
-                    <img src="images/news-img2.jpg" alt="News Image 2">
-                    <div class="card-content">
-                        <span class="date"><i class="far fa-calendar-alt"></i> August 15, 2025</span>
-                        <h3>Open Day for Prospective Students</h3>
-                        <p>Join us to learn more about our academic programs and school life...</p>
-                        <a href="#" class="read-more">Details <i class="fas fa-arrow-right"></i></a>
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-secondary">View All News</a>
+                        <a href="#" class="btn btn-secondary">View All Events</a>
                     </div>
-                </article>
-                <article class="news-event-card">
-                    <img src="images/news-img3.jpg" alt="News Image 3">
-                    <div class="card-content">
-                        <span class="date"><i class="far fa-calendar-alt"></i> July 10, 2025</span>
-                        <h3>Science Fair Innovation Showcase</h3>
-                        <p>Students presented groundbreaking projects at our annual Science Fair...</p>
-                        <a href="#" class="read-more">View Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="facebook-feed-column">
+                    <h3>Connect on Facebook</h3>
+                    <div class="facebook-embed-container">
+                        <div class="fb-page" data-href="https://www.facebook.com/facebookapp" data-tabs="timeline"
+                            data-width="" data-height="500" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="true" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/facebookapp" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/facebookapp">Facebook</a>
+                            </blockquote>
+                        </div>
                     </div>
-                </article>
-            </div>
-            <div class="fb-page" data-href="https://www.facebook.com/CNHSfbPage" data-tabs="timeline" data-width=""
-                data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/CNHSfbPage" class="fb-xfbml-parse-ignore"><a
-                        href="https://www.facebook.com/CNHSfbPage">DepEd Tayo - Candon National High School</a>
-                </blockquote>
-            </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-secondary">View All News</a>
-                <a href="#" class="btn btn-secondary">View All Events</a>
+                    <p class="text-center mt-3">Follow us for daily updates and photos!</p>
+                    <div class="text-center">
+                        <a href="https://www.facebook.com/facebookapp" target="_blank"
+                            class="btn btn-primary btn-facebook">
+                            <i class="fab fa-facebook-f"></i> Visit Our Page
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
 
     <section class="testimonials-section section-padding bg-royal-blue">
         <div class="container">
@@ -222,19 +240,16 @@
                 <div class="testimonial-item">
                     <img src="images/student-avatar1.jpg" alt="Student Avatar" class="testimonial-avatar">
                     <p class="testimonial-quote">"[School Name] has truly shaped me into the confident and capable
-                        individual I am today. The teachers are incredibly supportive, and the community feels like
-                        a
+                        individual I am today. The teachers are incredibly supportive, and the community feels like a
                         second family."</p>
                     <p class="testimonial-author"><strong>Maria Santos</strong><br>Alumna, Class of 2024</p>
                 </div>
                 <div class="testimonial-item">
                     <img src="images/parent-avatar1.jpg" alt="Parent Avatar" class="testimonial-avatar">
-                    <p class="testimonial-quote">"As a parent, I'm incredibly impressed with the holistic approach
-                        to
+                    <p class="testimonial-quote">"As a parent, I'm incredibly impressed with the holistic approach to
                         education at [School Name]. My child is not only excelling academically but also thriving
                         socially."</p>
-                    <p class="testimonial-author"><strong>Mr. & Mrs. Garcia</strong><br>Parents of current student
-                    </p>
+                    <p class="testimonial-author"><strong>Mr. & Mrs. Garcia</strong><br>Parents of current student</p>
                 </div>
             </div>
             <div class="carousel-nav">
@@ -249,7 +264,7 @@
     <section class="cta-admissions section-padding bg-royal-blue-dark">
         <div class="container text-center text-white">
             <h2>Ready to Join Our Community?</h2>
-            <p>Discover the difference a CNHSian education can make. We invite you to take the next step towards
+            <p>Discover the difference a [School Name] education can make. We invite you to take the next step towards
                 your child's bright future.</p>
             <div class="cta-buttons">
                 <a href="pages/admissions.html" class="btn btn-accent-light">Apply Now</a>
@@ -263,13 +278,13 @@
         <div class="container footer-grid">
             <div class="footer-column school-info">
                 <a href="index.html" class="footer-logo">
-                    <img src="images/cnhs-logo-white.png" alt="CNHS All White Logo">
+                    <img src="images/school-logo-white.png" alt="[School Name] Logo White">
                 </a>
-                <p>Candon National High School<br>
-                    National Highway, Bagani Campo, Candon City, 2710<br>
+                <p>[School Name]<br>
+                    [School Address, e.g., 123 Education Blvd, Galimuyod, Ilocos Region, Philippines]<br>
                     Philippines</p>
-                <p>Phone: (077) 632-0663<br>
-                    Email: <a href="mailto:300044@deped.gov.ph" style="color: #fff;">300044@deped.gov.ph</a></p>
+                <p>Phone: [Your Phone Number]<br>
+                    Email: <a href="mailto:info@schoolname.edu">info@schoolname.edu</a></p>
             </div>
             <div class="footer-column">
                 <h3>Quick Links</h3>
@@ -292,17 +307,17 @@
                 </div>
             </div>
             <div class="footer-column">
+                <h3>Our Location</h3>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3811.3148716133364!2d120.4492943751949!3d17.20350778365268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e19e22b60a80b%3A0xd84fb803ab9c2380!2sCandon%20National%20High%20School!5e0!3m2!1sen!2sph!4v1753344702687!5m2!1sen!2sph"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p><a href="https://maps.app.goo.gl/LbJmAZVFh15zoFEr6" target="_blank" class="map-link">View on
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.664871089297!2d120.47050305!3d14.58285955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bd3e00000001%3A0x6e78f9f7a7d4f9b8!2sUniversity%20of%20the%20Philippines%20Manila!5e0!3m2!1sen!2sph!4v1678901234567!5m2!1sen!2sph"
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p><a href="https://maps.app.goo.gl/YOUR_SCHOOL_MAP_LINK" target="_blank" class="map-link">View on
                         Google Maps</a></p>
             </div>
         </div>
         <div class="footer-bottom-bar">
             <div class="container">
-                <p>&copy; <span id="current-year"></span>&nbsp;Candon National High School. All Rights Reserved.</p>
+                <p>© <span id="current-year"></span> [School Name]. All Rights Reserved.</p>
                 <ul class="footer-legal-links">
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Conditions</a></li>

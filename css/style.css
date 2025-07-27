@@ -1,4 +1,4 @@
-/* General Resets & Base Styles */
+/* General Resets & Base Styles (No Change) */
 :root {
     /* Color Palette */
     --royal-blue: #000080;
@@ -153,8 +153,6 @@ ul {
 }
 
 .btn-accent-light:hover {
-    background-color: darken(var(--accent-yellow), 10%);
-    /* Requires Sass/Less or calculate manually */
     background-color: #E6C800;
     /* Manual darker yellow */
     border-color: #E6C800;
@@ -171,8 +169,21 @@ ul {
     color: var(--royal-blue-dark);
 }
 
+/* Specific for Facebook button */
+.btn-facebook {
+    background-color: #1877F2;
+    /* Facebook Blue */
+    border-color: #1877F2;
+    color: var(--white);
+}
 
-/* Header Section */
+.btn-facebook:hover {
+    background-color: #166FE5;
+    border-color: #166FE5;
+}
+
+
+/* Header Section (No Change) */
 .main-header {
     background-color: var(--white);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -277,7 +288,7 @@ ul {
     color: var(--royal-blue);
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu (No Change) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -335,7 +346,7 @@ ul {
     cursor: pointer;
 }
 
-/* Hero Section */
+/* Hero Section (No Change) */
 .hero-section {
     position: relative;
     height: 600px;
@@ -392,7 +403,7 @@ ul {
     margin: 0 10px;
 }
 
-/* Welcome Section */
+/* Welcome Section (No Change) */
 .welcome-section .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -419,7 +430,7 @@ ul {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Highlights Section */
+/* Highlights Section (No Change) */
 .highlights-section h2 {
     margin-bottom: 40px;
 }
@@ -479,15 +490,40 @@ ul {
     color: var(--royal-blue-light);
 }
 
-/* News & Events Section */
+/* MODIFIED News & Events Section */
 .news-events-section h2 {
     margin-bottom: 40px;
+    /* Space above the main grid */
+}
+
+/* New Grid for News + Facebook */
+.news-facebook-grid {
+    display: grid;
+    /* News content takes 2 parts, Facebook takes 1 part */
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    /* Space between the two columns */
+    align-items: start;
+    /* Align items to the top */
+}
+
+.news-events-content h3,
+.facebook-feed-column h3 {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    color: var(--royal-blue-dark);
+    text-align: left;
+    /* Ensure headings align left within their columns */
 }
 
 .news-events-grid {
+    /* Existing news grid styles, might need slight adjustments for vertical space */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Allow wrapping if items are too narrow */
     gap: 30px;
+    margin-bottom: 30px;
+    /* Space below news cards before "View All" buttons */
 }
 
 .news-event-card {
@@ -531,7 +567,43 @@ ul {
     color: #555;
 }
 
-/* Testimonials Section */
+/* Styles for the Facebook Column */
+/*
+.facebook-feed-column {
+    /* Flex-grow/shrink not needed with grid, but for general understanding */
+/* Add some padding or background if desired 
+}
+*/
+
+.facebook-embed-container {
+    /* Ensure the FB plugin takes up 100% of its parent column width */
+    width: 100%;
+    overflow: hidden;
+    /* Important for FB plugin responsiveness */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background-color: var(--white);
+    /* Ensure background is solid */
+}
+
+.fb-page {
+    /* These styles are crucial for the Facebook plugin to adapt */
+    width: 100% !important;
+    /* Force width to 100% */
+    display: block;
+    /* Ensure it behaves as a block element */
+}
+
+/* No !important needed on height. If you want a fixed height, set it on .fb-page or its container.
+   Facebook usually handles the height well with its content. */
+
+.facebook-feed-column .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+}
+
+/* Testimonials Section (No Change) */
 .testimonials-section {
     color: var(--white);
 }
@@ -618,7 +690,7 @@ ul {
 }
 
 
-/* Call to Action - Admissions */
+/* Call to Action - Admissions (No Change) */
 .cta-admissions h2 {
     color: var(--white);
     font-size: 2.5em;
@@ -637,7 +709,7 @@ ul {
     margin: 0 10px;
 }
 
-/* Footer Section */
+/* Footer Section (Minor location update) */
 .main-footer {
     background-color: var(--royal-blue-dark);
     color: var(--light-grey);
@@ -737,6 +809,8 @@ ul {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 992px) {
+
+    /* Existing Media Query Styles (No Change) */
     .main-nav .container {
         flex-wrap: wrap;
         justify-content: center;
@@ -829,9 +903,27 @@ ul {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
+    /* MODIFIED News & Events Media Query */
+    .news-facebook-grid {
+        grid-template-columns: 1fr;
+        /* Stack columns on smaller screens */
+    }
+
+    .news-events-content,
+    .facebook-feed-column {
+        padding-bottom: 30px;
+        /* Add space between stacked sections */
+    }
+
+    .news-events-content h3,
+    .facebook-feed-column h3 {
+        text-align: center;
+        /* Center headings on mobile */
+    }
+
     .news-events-grid {
         grid-template-columns: 1fr;
-        /* Stack news cards */
+        /* Stack news cards on mobile */
     }
 
     .footer-grid {
@@ -860,6 +952,8 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+    /* Existing Media Query Styles (No Change) */
     :root {
         --section-padding: 60px 0;
     }
@@ -911,22 +1005,4 @@ ul {
         padding: 20px;
         font-size: 0.9em;
     }
-}
-
-/* facebook-embed-container: Ensures responsiveness for the FB plugin */
-.facebook-embed-container {
-    display: flex;
-    /* Helps center the plugin if it's narrower than its container */
-    justify-content: center;
-    max-width: 600px;
-    /* Adjust max-width as desired for the feed column */
-    margin: 0 auto;
-    /* Center the container */
-    /* You might want to add padding or background specific to this section */
-}
-
-/* Important for the plugin to adapt to the container width */
-.fb-page {
-    width: 100% !important;
-    /* Override Facebook's default width */
 }
